@@ -1,2 +1,11 @@
-start development server: npm start
-create production build: npm run build
+# Libresse Game
+
+start development server: 
+```
+npm start
+```
+
+create production build: 
+```
+npm run build
+```
