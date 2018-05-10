@@ -1,0 +1,54 @@
+.page_finish {
+  background: url('../images/bg-finish.jpg') 50% 50% no-repeat;
+  background-size: 100%;
+  animation: opacityUp 1.5s ease 0s 1 backwards;
+}
+
+.page_finish .logo {
+  display: block;
+  width: 161px; height: 43px;
+  position: absolute; bottom:9px; right: 16px; 
+  background-size: 100%;
+  animation: opacityUp 1.5s ease 0s 1 backwards;
+}
+
+.pack {
+  position: absolute;
+  width: 193px; height: 202px;
+  top:207px; left:30px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation: rightFadeIn .8s ease .5s 1 backwards;
+}
+
+.pack:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 26%;
+  width: 100%;
+  height: 48%;
+  border-radius: 24px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.35);
+  transform: scale(0.98, 2.03);
+}
+
+.pack_1 {background-image: url('../images/back_1.png');}
+.pack_2 {background-image: url('../images/back_2.png');}
+.pack_3 {background-image: url('../images/back_3.png');}
+.pack_4 {background-image: url('../images/back_4.png');}
+.pack_5 {background-image: url('../images/back_5.png');}
+
+.page_finish .text-slogan {
+  left:30px; top:43px; position: absolute;
+  text-transform: uppercase;
+  font-size:39px; line-height: 36px;
+  animation: leftFadeIn .8s ease 1.8s 1 backwards;
+}
+
+.page_finish .text-result {
+  left:30px; top:167px; position: absolute;
+  text-transform: uppercase;
+  font-size:18px; line-height: 18px; font-family: 'HelveticaNeueCyr-Light', Helvetica, sans-serif;
+  animation: opacityUp .5s ease 1.3s 1 backwards;
+}

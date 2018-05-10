@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'HelveticaNeueLTCYR-BdCond';
+  src:  url('../fonts/HelveticaNeueLTCYR-BdCond.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src:  url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'HelveticaNeueLTCYR-BdCond', Helvetica, sans-serif;
+  background: #000000;
+  color: #06038d;
+  transform-origin: 50% 0;
+  overflow-x: hidden;
+}
+
+.color-pink {color:#e32894;}
+
+.pages {
+  position: relative;
+  margin: 0 auto;
+  width: 320px; height: 480px;
+  overflow:hidden;
+  background:#ffffff;
+}
+
+.page {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.logo {background: transparent url('../images/logo.png') 0 0 no-repeat;}
+
+@keyframes opacityUp {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeToggling {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  40% {opacity: 1;}
+  50% {opacity: 1;}
+  60% {opacity: 1;}
+  70% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes leftFadeIn {
+  0% {opacity: 0; transform: translateX(-100%);}
+  100% {opacity: 1; transform: translateX(0%);}
+}
+
+@keyframes rightFadeIn {
+  0% {opacity: 0; transform: translateX(50%);}
+  100% {opacity: 1; transform: translateX(0%);}
+}
+
+@keyframes leftMoveIn {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0%);} 
+}
+
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;} 
+}
+
+@keyframes topMoveIn {
+  0% {transform: translateY(-100vh);}
+  100% {transform: translateY(0%);} 
+}
+
+@keyframes topMoveFadeIn {
+  0% {transform: translateY(-50%); opacity: 0;}
+  100% {transform: translateY(0%); opacity: 1;} 
+}
+
+
+@keyframes scaleIn {
+  0% {transform: scale(0,0);}
+  100% {transform: scale(1,1);} 
+}
+
+.preload-assets {
+  font-family: 'HelveticaNeueCyr-Light';
+  width: 0; height: 0; overflow: hidden; position: absolute; top:-1000px; left:-1000px; opacity:0;
+}

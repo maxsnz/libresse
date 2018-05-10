@@ -1,0 +1,71 @@
+.page_game {
+  background: url('../images/bg-game.jpg') 50% 50% no-repeat;
+  background-size: 100%;
+  animation: opacityUp 1.5s ease 0s 1 backwards;
+}
+
+.cards-container {
+  width: 312px; height: 370px; margin: 70px auto;
+  animation: scaleIn 0.5s ease 0s 1 backwards;
+}
+
+.game-title, .game-timer {
+  position: absolute; width: 100%; text-align: center; text-transform: uppercase;
+}
+
+.game-title {
+  // font-size: 19px; line-height: 19px; top:22px;
+  font-size: 15px; line-height: 15px; top: 50px;
+  animation: leftMoveIn 1s cubic-bezier(0.535, 0.130, 0.525, 1.360) 0.5s 1 backwards;
+}
+
+.game-timer {
+  font-size:33px; line-height: 33px; top:25px;
+  animation: topMoveIn 1s ease 0s 1 backwards;
+}
+
+.card {float:left; margin: 0 6px 6px;}
+.card, .card .front, .card .back {
+  width: 66px;
+  height: 69px;
+}
+
+
+.card .front {background: url('../images/flip-top.png') 50% 50% no-repeat; background-size: 100%;}
+.card .back { background-size: 100%; background-repeat: no-repeat; background-position: 50% 50%;}
+
+.back_0 {background-image: url('../images/back_1.png');}
+.back_1 {background-image: url('../images/back_2.png');}
+.back_2 {background-image: url('../images/back_3.png');}
+.back_3 {background-image: url('../images/back_4.png');}
+.back_4 {background-image: url('../images/back_5.png');}
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-container.flip .flipper {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}

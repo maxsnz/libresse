@@ -1,0 +1,42 @@
+.page_product {
+  background: url('../images/bg-product.jpg') 50% 50% no-repeat;
+  background-size: 100%;
+  animation: opacityUp 1.5s ease 0s 1 backwards;
+}
+
+.page_product .logo {
+  display: block;
+  width: 161px; height: 43px;
+  position: absolute; bottom:9px; right: 16px; 
+  background-size: 100%;
+  animation: opacityUp 1.5s ease 0s 1 backwards;
+}
+
+.cases {
+  width: 310px; height: 133px;
+  position: absolute; top:98px; left:4px;
+  background: transparent url('../images/cases.png') 0 0 no-repeat;
+  background-size: 100%;
+  animation: topMoveFadeIn 1s ease 0.5s 1 backwards;
+}
+
+.page_product .text {
+  position: absolute; top: 236px; left:18px;
+  text-align: left; text-transform: uppercase;
+  font-size: 32px; line-height: 32px;
+  animation: opacityUp 0.5s ease 1.5s 1 backwards;
+}
+
+.socials {
+  position: absolute; top:380px; left:19px;
+  animation: opacityUp 0.5s ease 2s 1 backwards;
+}
+
+.social {
+  display: block; width: 31px; height: 31px; background-size: 100%;
+  float:left; margin-right: 11px; font-size: 0;
+}
+
+.social_vk {background-image: url('../images/logo-vk.png');}
+.social_insta {background-image: url('../images/logo-insta.png');}
+.social_fb {background-image: url('../images/logo-fb.png');}

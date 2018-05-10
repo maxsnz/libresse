@@ -1,0 +1,35 @@
+.page_start {
+  background: url('../images/bg.jpg') 50% 50% no-repeat;
+  background-size: 100%;
+  animation: opacityUp 1.5s ease 0s 1 backwards;
+}
+
+.page_start .text {
+  text-align: center;
+  position: absolute; top: 340px; width: 100%;
+  font-size:28px; line-height: 28px;
+  text-transform: uppercase; 
+}
+
+.page_start .text_1 {
+  animation: fadeToggling 6s linear 0s infinite backwards;
+}
+
+.page_start .text_2 {
+  animation: fadeToggling 6s linear 3s infinite backwards;
+}
+
+.page_start .logo {
+  display: block;
+  width: 195px; height: 52px;
+  position: absolute; top:37px; left: 50%; margin-left:-97px;
+  animation: opacityUp 1.5s ease 1s 1 backwards;
+}
+
+.packs {
+  display: block;
+  width: 283px; height: 188px;
+  position: absolute; top:131px; left: 50%; margin-left:-141px;
+  background: transparent url('../images/packs.png') 0 0 no-repeat;
+  animation: leftFadeIn 1s ease 1s 1 backwards;
+}
