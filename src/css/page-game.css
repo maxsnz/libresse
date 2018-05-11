@@ -1,11 +1,23 @@
 .page_game {
   background: url('../images/bg-game.jpg') 50% 50% no-repeat;
-  background-size: 100%;
+  background-size: cover;
   animation: opacityUp 1.5s ease 0s 1 backwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
 }
 
 .cards-container {
-  width: 312px; height: 370px; margin: 70px auto;
+  /* width: 312px; */
+  /* height: 370px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60vh;
+  max-width: 95vw;
+  height: 75vh;
+  margin: 70px auto;
   animation: scaleIn 0.5s ease 0s 1 backwards;
 }
 
@@ -24,10 +36,17 @@
   animation: topMoveIn 1s ease 0s 1 backwards;
 }
 
-.card {float:left; margin: 0 6px 6px;}
+.card {
+  /* float:left; */
+  /* margin: 0 6px 6px; */
+}
 .card, .card .front, .card .back {
-  width: 66px;
-  height: 69px;
+  /* width: 66px; */
+  /* height: 69px; */
+  width: 13vh;
+  max-width: 20vw;
+  height: 14vh;
+  max-height: 21vw;
 }
 
 

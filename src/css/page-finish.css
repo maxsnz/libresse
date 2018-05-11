@@ -6,8 +6,10 @@
 
 .page_finish .logo {
   display: block;
-  width: 161px; height: 43px;
-  position: absolute; bottom:9px; right: 16px; 
+  /* width: 161px; height: 43px; */
+  width: 50vmin;
+  height: 14vmin;
+  position: absolute; bottom:9px; right: 16px;
   background-size: 100%;
   animation: opacityUp 1.5s ease 0s 1 backwards;
 }
@@ -40,7 +42,9 @@
 .pack_5 {background-image: url('../images/back_5.png');}
 
 .page_finish .text-slogan {
-  left:30px; top:43px; position: absolute;
+  left:30px;
+  top:43px;
+  position: absolute;
   text-transform: uppercase;
   font-size:39px; line-height: 36px;
   animation: leftFadeIn .8s ease 1.8s 1 backwards;

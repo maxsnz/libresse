@@ -19,10 +19,10 @@ function setSize() {
 }
 
 const BannerSizer = function() {
-  setSize();
+  // setSize();
   window.addEventListener('resize', () => {
-    setSize();
-  }) 
+    // setSize();
+  })
 }
 
 export default BannerSizer;
