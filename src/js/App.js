@@ -19,7 +19,7 @@ class App extends Component {
     this.onOpenMainLink = this.onOpenMainLink.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     
     this.nextPageTimeout = setTimeout(() => {
       this.onStart();

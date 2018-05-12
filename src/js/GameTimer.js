@@ -10,7 +10,7 @@ class GameTimer extends Component {
     this.mounted = false;
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.mounted = true;
     this.timeStart = new Date();
     this.tick();

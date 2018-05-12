@@ -26,7 +26,7 @@ class PageGame extends Component {
     // window.finish = this.finish;
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.timeStart = null;
   }
 
