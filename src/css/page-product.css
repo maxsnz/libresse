@@ -48,7 +48,7 @@
 .socials {
   position: absolute;
   /* top:380px; */
-  top: 118vmin;
+  top: 133vmin;
   left:19px;
   animation: opacityUp 0.5s ease 2s 1 backwards;
 }
@@ -64,9 +64,10 @@
 
 .again {
   position: absolute;
-  top: 133vmin;
+  
+  top: 115vmin;
   left: 19px;
-  font-size: 32px;
+  font-size: 24px;
   border: 3px solid #e42993;
   padding: 1vmin 3vmin;
 }
