@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'HelveticaNeueLTCYR-BdCond';
-  src:  url('../fonts/HelveticaNeueLTCYR-BdCond.woff') format('woff');
+  font-family: 'HelveticaNeue-CondensedBold';
+  src:  url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HelveticaNeueCyr-Light';
-  src:  url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-family: 'HelveticaNeue-Light';
+  src:  url('../fonts/HelveticaNeue-Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'HelveticaNeueLTCYR-BdCond', Helvetica, sans-serif;
+  font-family: 'HelveticaNeue-CondensedBold', Helvetica, sans-serif;
   background: #000000;
   color: #06038d;
   transform-origin: 50% 0;
@@ -126,6 +126,6 @@ body {
 }
 
 .preload-assets {
-  font-family: 'HelveticaNeueCyr-Light';
+  font-family: 'HelveticaNeue-Light';
   width: 0; height: 0; overflow: hidden; position: absolute; top:-1000px; left:-1000px; opacity:0;
 }

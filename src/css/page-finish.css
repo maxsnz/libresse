@@ -53,6 +53,6 @@
 .page_finish .text-result {
   left:30px; top:167px; position: absolute;
   text-transform: uppercase;
-  font-size:18px; line-height: 18px; font-family: 'HelveticaNeueCyr-Light', Helvetica, sans-serif;
+  font-size:18px; line-height: 18px; font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
   animation: opacityUp .5s ease 1.3s 1 backwards;
 }
