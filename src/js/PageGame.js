@@ -23,7 +23,7 @@ class PageGame extends Component {
 
     this.finish = this.finish.bind(this);
 
-    // window.finish = this.finish;
+    window.finish = this.finish;
   }
 
   componentDidMount() {

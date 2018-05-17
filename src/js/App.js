@@ -17,6 +17,7 @@ class App extends Component {
     this.onFinish = this.onFinish.bind(this);
     this.onGoProduct = this.onGoProduct.bind(this);
     this.onOpenMainLink = this.onOpenMainLink.bind(this);
+    this.onPlayAgain = this.onPlayAgain.bind(this);
   }
 
   componentDidMount() {
@@ -54,6 +55,14 @@ class App extends Component {
     if (window.parent) window.parent.postMessage('banner.redirect', '*');
   }
 
+  onPlayAgain(e) {
+    e.preventDefault();
+    this.setState({
+      page: 'GAME',
+      result: null,
+    })
+  }
+
   render() {
     return (
       <div className="app-container">
@@ -62,7 +71,7 @@ class App extends Component {
           {(this.state.page==='START') && <PageStart onClick={this.onStart} />}
           {(this.state.page==='GAME') && <PageGame onFinish={this.onFinish} />}
           {(this.state.page==='FINISH') && <PageFinish onClick={this.onGoProduct} time={this.state.result} />}
-          {(this.state.page==='PRODUCT') && <PageProduct onClick={this.onOpenMainLink} />}
+          {(this.state.page==='PRODUCT') && <PageProduct onClick={this.onOpenMainLink} onPlayAgain={this.onPlayAgain} />}
         </div>
       </div>
     );

@@ -41,6 +41,10 @@
   animation: opacityUp 0.5s ease 1.5s 1 backwards;
 }
 
+.page_product .clickable {
+  position: absolute; top:0; left:0; width:100%; height: 100%;
+}
+
 .socials {
   position: absolute;
   /* top:380px; */
@@ -57,3 +61,12 @@
 .social_vk {background-image: url('../images/logo-vk.png');}
 .social_insta {background-image: url('../images/logo-insta.png');}
 .social_fb {background-image: url('../images/logo-fb.png');}
+
+.again {
+  position: absolute;
+  top: 133vmin;
+  left: 19px;
+  font-size: 32px;
+  border: 3px solid #e42993;
+  padding: 1vmin 3vmin;
+}
